@@ -12,5 +12,5 @@ function onIncreaseButtonClick() {
   refs.counterValue.textContent++;
 }
 
-refs.decreaseButton.addEventListener("click", onIncreaseButtonClick);
+refs.decreaseButton.addEventListener("click", onDecreaseButtonClick);
 refs.increaseButton.addEventListener("click", onIncreaseButtonClick);
