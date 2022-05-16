@@ -4,12 +4,17 @@ const refs = {
   counterValue: document.querySelector('#value'),
 }
 
+let initialNumber = 0;
+
 function onDecreaseButtonClick() {
-  refs.counterValue.textContent -= 1;
+  initialNumber -= 1;
+  refs.counterValue.textContent = initialNumber;
+  
 }
 
 function onIncreaseButtonClick() {
-  refs.counterValue.textContent++;
+  initialNumber += 1;
+  refs.counterValue.textContent = initialNumber;
 }
 
 refs.decreaseButton.addEventListener("click", onDecreaseButtonClick);
